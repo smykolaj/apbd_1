@@ -7,13 +7,13 @@ Console.WriteLine("Hello, World!");
 
 static double GetAverage(int[] numbers)
 {
-    double numbersSum = 0.0;
+    double sumOfNums = 0.0;
     foreach (var number in numbers)
     {
-        numbersSum += number;
+        sumOfNums += number;
     }
 
-    return numbersSum / numbers.Length;
+    return sumOfNums / numbers.Length;
 }
 
 int[] numbers = {1, 2, 3, 4};
@@ -22,17 +22,17 @@ Console.WriteLine(average);
 
 static int GetMax(int[] numbers)
 {
-    int max;
+    int maxNum;
     if(numbers.Length >= 1)
     {
-        max = numbers[0];
+        maxNum = numbers[0];
         foreach (var number in numbers)
         {
-            if (number > max)
-                max = number;
+            if (number > maxNum)
+                maxNum = number;
         }
 
-        return max;
+        return maxNum;
     }
 
     return 0;
