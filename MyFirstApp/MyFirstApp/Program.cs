@@ -22,17 +22,17 @@ Console.WriteLine(average);
 
 static int GetMax(int[] numbers)
 {
-    int max;
+    int maxNum;
     if(numbers.Length >= 1)
     {
-        max = numbers[0];
+        maxNum = numbers[0];
         foreach (var number in numbers)
         {
-            if (number > max)
-                max = number;
+            if (number > maxNum)
+                maxNum = number;
         }
 
-        return max;
+        return maxNum;
     }
 
     return 0;
